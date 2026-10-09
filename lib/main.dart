@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,19 +13,15 @@ class ZeroChatApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'زيرو دردشة',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6750A4),
-          brightness: Brightness.dark,
-        ),
-      ),
+      theme: ThemeData.dark(),
       home: const Scaffold(
+        backgroundColor: Color(0xFF171329),
         body: Center(
           child: Text(
             'زيرو دردشة',
             style: TextStyle(
-              fontSize: 32,
+              color: Colors.white,
+              fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
           ),
